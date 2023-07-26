@@ -1,9 +1,14 @@
 import React from 'react'
 
 
-const Greet = () => { 
-
-    return <h3>Hello Baby</h3> 
+const Greet = (props) => { 
+    console.log(props)
+    return (
+        <div>
+            <p>Hello {props.name}</p> 
+            {props.children}
+        </div>
+    )
 
 }
 

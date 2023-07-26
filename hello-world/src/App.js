@@ -7,8 +7,11 @@ import Hello from './components/Hello'
 function App() {
   return (
     <div className="App">
-      <Greet/>
-      <Welcome/>
+      <Greet name="Luis">
+        <p> children props </p>
+        <button> click me </button>
+      </Greet>
+      <Welcome name="Cooper"/>
       <Hello/>
     </div>
   );
