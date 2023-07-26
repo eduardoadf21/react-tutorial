@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import Greet from './components/Greet'
 import Welcome from './components/Welcome'
-import Hello from './components/Hello'
+import Message from './components/Message'
 
 function App() {
   return (
@@ -11,8 +11,10 @@ function App() {
         <p> children props </p>
         <button> click me </button>
       </Greet>
+
       <Welcome name="Cooper"/>
-      <Hello/>
+
+      <Message></Message>
     </div>
   );
 }
