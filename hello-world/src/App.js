@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
-import Click from './components/Click'
+import EventBind from './components/EventBind';
 
 function App() {
   return (
     <div className="App">
 
-      <Click></Click>
+      <EventBind></EventBind>
 
     </div>
   );
