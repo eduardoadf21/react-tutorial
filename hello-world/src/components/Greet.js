@@ -3,7 +3,7 @@ import React from 'react'
 
 const Greet = () => { 
 
-    return <h1>Hello Baby</h1> 
+    return <h3>Hello Baby</h3> 
 
 }
 
