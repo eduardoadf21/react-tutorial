@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
-import NameList from './components/NameList';
+import Stylesheet from './components/Stylesheet';
 
 function App() {
 
   return (
     <div className="App">
-      <NameList></NameList>
+      <Stylesheet primary={true}></Stylesheet>
     </div>
   );
 }
