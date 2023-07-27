@@ -16,14 +16,37 @@ class LifeCycleA extends Component {
         return null
     }
 
+    shouldComponentUpdate(){
+        console.log('lifecycleA shouldComponentUpdate')
+        return true
+    }
+
+    componentDidUpdate(){
+        console.log('lifecycleA componentDidUpdate')
+    }
+
+    getSnapshotBeforeUpdate(){
+        console.log('lifecycle A getSnapshotBeforeUpdate')
+        return null
+    }
+
     componentDidMount(){
         console.log('lifecycle A componentDidMount')
+    }
+
+    changeState = () => {
+        this.setState ({
+            name: 'Codevolution'
+        })
     }
 
     render() {
         console.log('lifecycleA render')
         return (
-        <div>LifeCycleA</div>
+            <div>
+                <div>lifecycle A</div>
+                <button onClick={this.changeState}>change state</button>
+            </div>
         )
     }
 }
