@@ -1,19 +1,19 @@
 import React from "react"
-import Person from "./Person"
+import Pet from "./Pet"
 
 function NameList (props) {
 
-    const persons = [
-        { name: 'Paçoca', age: 5, nickname: 'Çoçoca'},
-        { name: 'Pipoca', age: 11, nickname: 'Popoca'},
-        { name: 'Amendoim', age: 7, nickname: 'Duim'}
+    const pets = [
+        { id: 1, name: 'Paçoca', age: 5, nickname: 'Çoçoca'},
+        { id: 2, name: 'Pipoca', age: 11, nickname: 'Popoca'},
+        { id: 3, name: 'Amendoim', age: 7, nickname: 'Duim'}
     ]
 
-    const personList = persons.map(person => <Person person={person}/>)
+    const petList = pets.map(pet => <Pet key={pet.id} pet={pet}/>)
 
     return(
         <div>
-            { personList }
+            { petList }
         </div>
     )
 
